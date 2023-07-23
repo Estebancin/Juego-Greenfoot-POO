@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List; 
 /**
  * Write a description of class GreenCar here.
  * 
@@ -40,11 +40,15 @@ public class GreenCar extends Actor
     }    
     
     public void checkCollision() {
-        RedCar redCar = (RedCar) getOneIntersectingObject(RedCar.class);
-        if (null != redCar) {
-            Greenfoot.stop();
+   List<Rocket> rockets = getIntersectingObjects(Rocket.class);
+        List<RedCar> redCars = getIntersectingObjects(RedCar.class);
+
+        if (!rockets.isEmpty() || !redCars.isEmpty()) {
+            Greenfoot.stop(); // Detener el juego
         }
     }
+
+
     
     public int getX() { return x; }
     public int getY() { return y; }

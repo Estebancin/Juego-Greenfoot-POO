@@ -37,6 +37,8 @@ public class MyWorld extends World
         addObject(greenCar, greenCar.getX(), greenCar.getY());
         addObject(new Score(this), 85, 10);
         addRedCar();
+        
+        addRockets();
     }
     
     public void act() {
@@ -57,6 +59,12 @@ public class MyWorld extends World
         numRedCarsAdded += 1L;
         if (numRedCarsAdded % 50 == 0) {
             maxRedCars += 1;
+        }
+    }
+    private void addRockets() {
+        for (int i = 0; i < 5; i++) {
+            int randomY = Greenfoot.getRandomNumber(getHeight());
+            addObject(new Rocket(), getWidth(), randomY);
         }
     }
 
@@ -97,4 +105,36 @@ public class MyWorld extends World
         }
         return positions;
     }
+     // Clase Rocket
+    public class Rocket extends Actor
+    {
+        private int speed = 5; // Velocidad del cohete
+        private boolean movingRight; // Bandera para indicar la dirección del movimiento
+        private int appearProbability = 2; // Probabilidad de aparición 
+        
+        public void act()
+        {
+            if (Greenfoot.getRandomNumber(appearProbability) == 0) {
+                if (movingRight) {
+                    setLocation(getX() + speed, getY());
+                    if (getX() > getWorld().getWidth()) {
+                        getWorld().removeObject(this);
+                    }
+                } else {
+                    setLocation(getX() - speed, getY());
+                    if (getX() < 0) {
+                        getWorld().removeObject(this);
+                    }
+                }
+            }
+        }
+        
+        public Rocket() {
+            movingRight = Greenfoot.getRandomNumber(2) == 0;
+            setImage("rocket.png"); 
+        }
+        
 }
+    }
+
+
