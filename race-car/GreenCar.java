@@ -39,11 +39,10 @@ public class GreenCar extends Actor
         checkCollision();
     }    
     
-    public void checkCollision() {
-   List<Rocket> rockets = getIntersectingObjects(Rocket.class);
+    public void checkCollision() {;
         List<RedCar> redCars = getIntersectingObjects(RedCar.class);
 
-        if (!rockets.isEmpty() || !redCars.isEmpty()) {
+        if (!redCars.isEmpty()) {
             Greenfoot.stop(); // Detener el juego
         }
     }
