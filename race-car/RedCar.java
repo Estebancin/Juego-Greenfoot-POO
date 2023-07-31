@@ -31,7 +31,7 @@ import java.util.Random;
      */
     public void act() 
     {
-        y = y + 2;
+        y = y + 1;
         setLocation(x, y);
         if (isAtEdge()) {
             ((MyWorld)getWorld()).removeRedCar(this);
