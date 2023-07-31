@@ -1,7 +1,7 @@
 #Greenfoot project file
 class.GreenCar.image=car02-n.png
 class.MyWorld.image=Dise\u00F1o\ sin\ t\u00EDtulo.png
-class.RedCar.image=steel-ball.png
+class.RedCar.image=meteorito\ celesteeeeeeeeeeeeeeeeeeeeeee.png
 class.Rocket.image=rocket.png
 dependency1.from=MyWorld
 dependency1.to=GreenCar
@@ -27,10 +27,10 @@ dependency7.type=UsesDependency
 dependency8.from=Rocket
 dependency8.to=GreenCar
 dependency8.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=360
+editor.fx.0.y=26
 height=830
 package.numDependencies=8
 package.numTargets=5
