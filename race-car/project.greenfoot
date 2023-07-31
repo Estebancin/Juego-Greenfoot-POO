@@ -1,7 +1,7 @@
 #Greenfoot project file
 class.GreenCar.image=car02-n.png
 class.MyWorld.image=Dise\u00F1o\ sin\ t\u00EDtulo.png
-class.RedCar.image=meteorito\ celesteeeeeeeeeeeeeeeeeeeeeee.png
+class.RedCar.image=meteoro\ final.png
 class.Rocket.image=rocket.png
 dependency1.from=MyWorld
 dependency1.to=GreenCar
