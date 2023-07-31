@@ -44,8 +44,9 @@
             addRedCar();
             
             addRockets();
-            backgroundMusic1 = new GreenfootSound("C:\\Users\\esteb\\OneDrive\\Documentos\\GitHub\\Juego-Greenfoot-POO\\race-car\\sounds\\pista 2.mp3");
-            backgroundMusic2 = new GreenfootSound("C:\\Users\\esteb\\OneDrive\\Documentos\\GitHub\\Juego-Greenfoot-POO\\race-car\\sounds\\inicio.mp3");
+            backgroundMusic1 = new GreenfootSound("./race-car/sounds/pista 2.mp3");
+            backgroundMusic2 = new GreenfootSound("./race-car/sounds/inicio.mp3");
+
 
             backgroundMusic1.setVolume(70); // Ajustar el volumen (0-100)
             backgroundMusic1.play();
