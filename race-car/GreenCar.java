@@ -27,13 +27,13 @@ public class GreenCar extends Actor
     public void act() 
     {
         if (Greenfoot.isKeyDown("left")) {
-            x = x - 1;
+            x = x - 2;
         } else if (Greenfoot.isKeyDown("right")) {
-            x = x + 1;
+            x = x + 2;
         } else if (Greenfoot.isKeyDown("up")) {
-            y = y - 1;
+            y = y - 2;
         } else if (Greenfoot.isKeyDown("down")) {
-            y = y + 1;
+            y = y + 2;
         }
         setLocation(x, y);
         checkCollision();
